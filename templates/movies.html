@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Recommender | Movies</title>
+    <link rel="stylesheet" href="../static/movies.styles.css">
+</head>
+<body>
+    <div>
+        <header>
+            Titles similar to {{movie}}
+        </header>
+        <div class="cards">
+            {%for i in range(length)%}
+                <div class="card">
+                    <img src="{{movies_dict[movies[i]][3]}}" class="card__image" alt="movie poster" />
+                    <div class="card__content">
+                        <time class="card__date">{{ movies_dict[movies[i]][1] }}</time>
+                        <span class="card__title">{{ movies_dict[movies[i]][0] }}<span>
+                        <p>{{ movies_dict[movies[i]][2] }}</p>
+                    </div>
+                  </div>
+            {%endfor%}
+        </div>
+        <button class="reload-btn" onClick="window.location.reload()">Search Again</button>
+    </div>
+</body>
+</html>
