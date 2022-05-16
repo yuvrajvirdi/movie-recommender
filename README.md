@@ -15,14 +15,14 @@ Web application that recommends movies to watch based on content or metadata, us
 
 # Installation
 
-Clone the repo
+1. Clone the repo
 ```bash
 git clone https://github.com/yuvrajvirdi/movie-recommender.git
 ```
 
-Install the depenencies found in `requirements.txt` using pip
+2. Install the depenencies found in `requirements.txt` using pip
 
-Run the app
+3. Run the app
 ```bash
 flask run
 ```
