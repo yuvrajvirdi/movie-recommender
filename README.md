@@ -7,6 +7,7 @@ Movie recommendation web app using machine learning
 Web application that recommends movies to watch based on content or metadata.
 **Content-based search**
 * Returns movies that are similar in content
+
 **Metadata-based search**
 * Returns movies that have similar actors, directors, keywords and genres
 
